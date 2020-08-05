@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import QAcards from "./components/QAcards";
+import Container from "react-bootstrap/Container";
 import "./index.css";
 
 function App() {
@@ -23,13 +24,9 @@ function App() {
             {loading ? (
                 <div className="loading">Loading...</div>
             ) : (
-                <div>
+                <Container>
                     <QAcards result={result} />
-                    <div className="btn-container">
-                        <button onClick="">Next Questions</button>
-                        <button onClick="">Submit</button>
-                    </div>
-                </div>
+                </Container>
             )}
         </>
     );
