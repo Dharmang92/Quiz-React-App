@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import uuid from "uuid";
-import { useEffect } from "react";
 
 const QAcards = ({ result }) => {
-    const [group, setGroup] = useState([]);
-    const [answer, setAnswer] = useState({});
     let count = 1;
 
     // result is array of objects.
